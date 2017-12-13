@@ -1,0 +1,77 @@
+<html>
+
+<style>
+    * {
+        margin: 5px;
+        padding: 4px;
+    }
+    
+    fieldset {
+        width: 400px;
+        height: auto;
+    }
+</style>
+
+<body>
+    <fieldset>
+        <form action="process.php" method="post">
+            <p>
+                <h1>My Registration Form</h1>
+            </p>
+
+            <form>
+                <label for="first_name">First Name:</label>
+                <input value="John" type="text" id="first_name" name="first_name">
+                <br>
+                <br>
+                <label for="last_name">Last Name:</label>
+                <input value="Doe" type="text" id="last_name" name="last_name">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input value="CodingDojoMaster@gmail.com" type="text" id="email" name="email">
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input value="CodingDojo" type="password" id="password" name="password">
+                <br>
+                <br>
+                <label for="confirmpassword">Confirm Password:</label>
+                <input value="CodingDojo" type="password" id="password" name="password">
+                <br>
+                <br>
+                <label for="birthday">Birthday:</label>
+                <input type="date">
+                <br>
+                <br>
+                <label>Male</label>
+                <input type="radio" name="gender">
+                <label>Female</label>
+                <input type="radio" name="gender">
+                <label>Other</label>
+                <input type="radio" name="gender">
+                <br>
+                <br>
+                <label>A short description of yourself:</label>
+                <br>
+                <br>
+                <textarea></textarea>
+                <br>
+                <br>
+                <label>Favorite Language:</label>
+                <select>
+                            <option>Javascript</option>
+                            <option>Python</option>
+                            <option>HTML</option>
+                            <option>Ruby</option>
+                        </select>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+
+            </form>
+    </fieldset>
+
+</body>
+
+</html>
