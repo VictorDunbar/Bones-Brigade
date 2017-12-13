@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pacman</title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .wrapper {
+            width: 635px;
+        }
+        
+        #wall {
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+            display: inline-block;
+            margin-bottom: -4px;
+        }
+        
+        #ground {
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            display: inline-block;
+            margin-bottom: -4px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+    </div>
+</body>
+<script>
+    var world = [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 3, 3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 0],
+        [0, 3, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 3, 0],
+        [0, 3, 3, 3, 3, 3, 0, 3, 0, 3, 3, 3, 3, 3, 0],
+        [0, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0],
+        [0, 3, 3, 3, 0, 3, 3, 3, 3, 3, 0, 3, 3, 3, 0],
+        [0, 3, 0, 3, 0, 3, 0, 0, 0, 3, 0, 3, 0, 3, 0],
+        [0, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 0],
+        [0, 3, 0, 3, 0, 3, 0, 0, 0, 3, 0, 3, 0, 3, 0],
+        [0, 3, 3, 3, 0, 3, 3, 3, 3, 3, 0, 3, 3, 3, 0],
+        [0, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0],
+        [0, 3, 3, 3, 3, 3, 0, 3, 0, 3, 3, 3, 3, 3, 0],
+        [0, 3, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 3, 0],
+        [0, 3, 3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    ];
+
+    function DrawWorld() {
+        var htmlStr = "";
+        var count = 0;
+        for (var y = 0; y < world.length; y++) {
+            for (var x = 0; x < world[y].length; x++) {
+                count++;
+
+                if (world[y][x] === 0) {
+                    htmlStr += '<div id="wall"></div>'
+                }
+                if (world[y][x] === 1) {
+
+                }
+                if (world[y][x] === 2) {
+
+                }
+                if (world[y][x] === 3) {
+                    htmlStr += '<div id="ground"></div>'
+                }
+            }
+        }
+        $(".wrapper").html(htmlStr);
+        console.log(count);
+    }
+    $(document).ready(function() {
+        DrawWorld();
+    })
+</script>
+
+
+
+</html>

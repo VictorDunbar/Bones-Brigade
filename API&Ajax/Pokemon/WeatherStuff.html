@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather Stuff</title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+        $('document').ready(function() {
+            $('#form_1').submit(function() {
+                var city = $('#search').val();
+
+
+                $.get("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&&appid=f7cb826aaa7bdee115fb9a0a827213b2", function(res) {
+                    console.log(res);
+
+                    var html_str = "";
+                    html_str += "<h1>" + res.name + "</h1>";
+
+                    html_str += "<h2>" + res.main.temp + "degrees</h2>";
+
+                    $('#results').html(html_str);
+
+                }, 'json');
+                return false;
+            })
+        })
+    </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        
+        input {
+            border-radius: 5px;
+            width: 300px;
+            height: 25px;
+            margin-left: 60px;
+            font-size: 15px;
+        }
+        
+        button {
+            border-radius: 5px;
+            width: 200px;
+            height: 25px;
+            font-weight: bold;
+        }
+        
+        #results {
+            display: block;
+            margin-left: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Weather Lookup</h1>
+    <form id="form_1">
+        <input type="text" id="search" name="city" value="">
+        <button type="submit" id="click">Fetch Weather</button>
+    </form>
+    <div id="results"></div>
+
+    </div>
+</body>
+
+
+</html>
