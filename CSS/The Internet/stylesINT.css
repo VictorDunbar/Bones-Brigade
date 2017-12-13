@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 930px;
+    height: auto;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.highlight {
+    color: rgb(41, 104, 157);
+}
+
+.header img {
+    width: 90px;
+    position: absolute;
+}
+
+.header h1 {
+    color: rgb(79, 79, 79);
+    font-size: 45px;
+    margin: 20px 0px 0px 90px;
+}
+
+.header h2 {
+    font-size: 25px;
+    font-weight: normal;
+    display: block;
+    padding: 10px;
+    background-color: #4c7faa;
+    color: white;
+}
+
+.main {
+    width: 970px;
+}
+
+.column1 {
+    width: 200px;
+    height: auto;
+    padding-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text1 {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 3px;
+}
+
+.redtext {
+    color: red;
+}
+
+.text2 {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 3px;
+}
+
+.button1 {
+    width: 190px;
+    height: 25px;
+    background-color: #4c7faa;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 15px;
+    color: white;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    box-shadow: 2px 2px grey;
+    margin-left: 5px;
+    border-width: 4px;
+    border-color: black;
+}
+
+.button2 {
+    width: 190px;
+    height: 25px;
+    background-color: orangered;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 5px;
+    color: white;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    box-shadow: 2px 2px grey;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    border-width: 4px;
+    border-color: black;
+}
+
+.ninjamatrixbox {
+    background-image: url(images/ad_background.png);
+    height: 300px;
+    width: auto;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.ninjamatrixbox img {
+    width: 85px;
+    margin-bottom: 6px;
+}
+
+.button3 {
+    width: 180px;
+    height: 25px;
+    background-color: #35c8df;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 4px;
+    margin-left: 9px;
+    border-width: 3px;
+    border-color: black;
+}
+
+.rightcolumn {
+    width: 700px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.rightcolumn .home {
+    width: 20px;
+    vertical-align: top;
+    margin-top: 7px;
+    display: inline-block;
+}
+
+.rightcolumn p {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 10px;
+    margin-top: 12px;
+    width: 380px;
+}
+
+.rightcolumn p .thin {
+    display: inline-block;
+    color: black;
+    margin-right: 100px;
+    margin-top: 0px;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.rightcolumn .phone {
+    width: 40px;
+    margin-top: 7px;
+    display: inline-block;
+}
+
+.contact info {
+    width: 200px;
+    vertical-align: top;
+    display: inline-block;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.contact1 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: top;
+}
+
+.contact2 {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 15px;
+    text-align: top;
+    color: lightskyblue
+}
+
+.contact3 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: top;
+}
+
+h3 {
+    color: #27c7e1;
+    margin: 7px 0px;
+}
+
+.rightcolumn p1 {
+    font-size: 10px;
+    display: inline-block;
+}
+
+.rightcolumn p2 {
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rightcolumn li {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.rightcloumn ul {
+    margin-left: 40px;
+}
+
+.rightcolumn ol {
+    margin-left: 40px;
+}
+
+.client_server {
+    width: 250px;
+    margin: 20px 0px 10px 200px;
+}
+
+.blue highlight {
+    color: rgb(0, 47, 170);
+}
+
+#footer {
+    width: 970px;
+    height: 300px;
+    display: inline-block;
+    border: 4px;
+    border-color: lightskyblue;
+}
+
+.html_icon {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
+
+.footer body {
+    width: 500px;
+    height: auto;
+    display: inline-block;
+    border: 2px;
+}
+
+.footer body h3 {
+    width: 400px;
+    text-align: top;
+    display: inline-block;
+}
+
+.footer body p {
+    width: 400px;
+    font-size: normal;
+}

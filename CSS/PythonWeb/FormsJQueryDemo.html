@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title></title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            alert('hello!');
+            $('form').submit(function() {
+                alert('you are submmitting me!');
+                return false
+            });
+            $('.btn').click(function() {
+                $('#form1').submit();
+            })
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <form id='form1' action="process.php" method='post'>
+        First name<input type='text' name='first_name'> Last name<input type='text' name='last_name'> Email
+        <input type='text' value='email'>
+        <input type='submit' value='Submit!'>
+    </form>
+
+    <button class='btn'>Click me to use .submit() differntly!</button>
+
+</body>
+
+</html>
