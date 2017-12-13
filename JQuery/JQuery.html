@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQuery Demo</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        
+        div {
+            background-color: lightgrey;
+            height: auto;
+            width: 950px;
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        type = "text/javascript" >
+            $(document).ready(function() {
+                $('#disappear').click(function() {
+                    $("p").hide()
+                })
+                $('#appear').click(function() {
+                    $("p").show()
+                })
+
+                $('#toggle').click(function() {
+                    $("p1").toggle()
+                })
+                $('#slideDown').click(function() {
+                    $("#slide").slideDown()
+                })
+                $('#slideUp').click(function() {
+                    $("#slide").slideUp()
+                })
+                $('#slideToggle').click(function() {
+                    $('#red').slideToggle()
+                })
+                $("#fadeIn").click(function() {
+                    $("#purple").fadeIn()
+                })
+                $("#fadeOut").click(function() {
+                    $("#purple").fadeOut()
+                })
+                $("#before").click(function() {
+                    $("text").before("<text>Do you like cheese?     </text>")
+
+                })
+                $("#after").click(function() {
+                    $("text2").after("<text2>   I want it all!!!</text2>")
+                })
+                $("#append").click(function() {
+                    $("p").append("<b>No it doesnt</b>")
+                })
+                $("#append1").click(function() {
+                    $("ol").append("<li>This is trash.</li>")
+                })
+                $("#html").click(function() {
+                    $("text3").html("Roses on <b> Roses! </b>")
+                })
+                $("#attr").click(function() {
+                    $("img").attr("width", "600", "height", "474")
+                })
+                $("#value").click(function() {
+                    $("input").val("jack skellington")
+                })
+                $("#text").click(function() {
+                    $("text4").text("I just want chicken nuggets!!")
+                })
+
+
+            })
+    </script>
+
+</head>
+
+<body>
+    <div><button id="disappear">.hide</button>
+        <button id="appear">.show</button>
+        <p>Make me disappear!</p>
+    </div>
+    <hr>
+    <div>
+        <button id="toggle">.toggle</button>
+        <p1>.hide .show</p1>
+    </div>
+    <hr>
+    <div>
+        <button id="slideUp">.slideUp</button>
+        <button id="slideDown">.slideDown</button>
+    </div>
+    <div id="slide" style="height: 100px; width: 100px; background-color: white;">
+    </div>
+    <div id="red" style="height: 100px; width: 100px; background-color: red;">
+    </div>
+    <hr>
+    <div>
+        <button id="slideToggle">.slideToggle</button>
+    </div>
+    <hr>
+    <div>
+        <button id="fadeOut">.fadeOut</button>
+        <button id="fadeIn">.fadeIn</button>
+        <div id="purple" style="height: 100px; width: 100px; background-color: purple;">
+        </div>
+    </div>
+    <hr>
+    <div>
+        <button id="before">.before</button>
+        <br>
+        <text>I love cheese!!</text>
+    </div>
+    <hr>
+    <div>
+        <button id="after">.after</button>
+        <br>
+        <text2>Do you want pizza or nachos?</text2>
+    </div>
+    <hr>
+    <div>
+        <button id="append">.append text</button>
+        <button id="append1">.append list item</button>
+        <p>This list sucks.</p>
+        <p>This list also sucks.</p>
+        <ol>
+            <li>Sucks1</li>
+            <li>Sucks2</li>
+            <li>Sucks3</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <button id="html">Change this crap</button>
+        <text3>Crap</text3>
+        <text3>Crappier crap</text3>
+
+    </div>
+    <hr>
+    <div>
+        <button id="attr">.attr</button>
+        <img src="http://www.gifliberry.com/dog-swearing-in.jpg" alt "http://www.gifliberry.com" id="img"><b>
+    </div>
+    <hr>
+    <div>
+        <button id="value">.val</button>
+        <input type="text"><br>
+    </div>   
+    <hr>
+    <div>
+        <button id="text">.text</button>
+        <text4>This activity took way too much time!</text4>
+        <text4>VERY VERY VERY VERY looooooooongg time...</text4>
+    </div>
+   
+</body>
+
+</html>

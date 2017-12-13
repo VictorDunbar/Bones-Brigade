@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQuery Assignment</title>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        
+        header {
+            background-color: lightgrey;
+            height: 60px;
+            width: 400px;
+            font-family: "Comic Sans", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("img").click(function() {
+                $(this).hide();
+            })
+            $("#Reload").click(function() {
+                $("img").show();
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h3>Disappearing Ninja Assignment</h3>
+    </header>
+    <hr>
+    <img src="fat-ninja.jpg" alt="fat ninja1">
+
+    <img src="fat-ninja.jpg" alt="fat ninja2">
+
+    <img src="fat-ninja.jpg" alt="fat ninja3">
+
+    <img src="fat-ninja.jpg" alt="fat ninja4">
+
+    <img src="fat-ninja.jpg" alt="fat ninja5">
+
+    <img src="fat-ninja.jpg" alt="fat ninja6">
+
+    <img src="fat-ninja.jpg" alt="fat ninja7">
+
+    <img src="fat-ninja.jpg" alt="fat ninja8">
+
+    <hr>
+    <div><button id="Reload">Reload</button></div>
+
+
+</body>
+
+</html>

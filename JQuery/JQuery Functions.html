@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Functions</title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.click').click(function() {
+                alert("You've clicked the button!");
+            })
+            $('.hide button').click(function() {
+                $('.hide p').hide(1000);
+            })
+            $('.show button').click(function() {
+                $('.show .inivisible').show();
+            })
+        })
+    </script>
+
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+        
+        body {
+            width: 970px;
+            height: 3150px;
+            border: black 5px solid;
+        }
+        
+        .function {
+            width: 800px;
+            height: 150px;
+            text-align: center;
+            border-bottom: black 5px solid;
+            margin-left: 80px;
+        }
+        
+        h1 {
+            margin: 20px 0px;
+            text-align: center;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        button {
+            /*display: inline-block;*/
+            width: auto;
+            height: 30px;
+            text-align: left;
+            border: black 2px solid;
+            background-color: white;
+            padding: 0px 20px;
+            box-shadow: 3px 3px black;
+            /*outline: none;*/
+        }
+        
+        .function.last {
+            border-bottom: none;
+        }
+        
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="function click">
+        <h1>Click</h1>
+        <p>Click the button to see what .click does</p>
+        <button type="button" name="button">Click</button>
+    </div>
+    <div class="function hide">
+        <h1>Hide</h1>
+        <p>Click the button to see what .hide does</p>
+        <button class="hide" type="button" name="button">Hide</button>
+    </div>
+    <div class="function show">
+        <h1>Show</h1>
+        <p>Click the button to see what .show does <span class="invisible">BOO!!!</span></p>
+        <button type="button" name="button">Show</button>
+    </div>
+    <div class="function">
+        <h1>Toggle</h1>
+        <p>Click the button to see what .toggle does</p>
+        <button type="button" name="button">Toggle</button>
+    </div>
+    <div class="function">
+        <h1>SlideDown</h1>
+        <p>Click the button to see what .slideDown does</p>
+        <button type="button" name="button">SlideDown</button>
+    </div>
+    <div class="function">
+        <h1>SlideUp</h1>
+        <p>Click the button to see what .slideUp does</p>
+        <button type="button" name="button">SlideUp</button>
+    </div>
+    <div class="function">
+        <h1>SlideToggle</h1>
+        <p>Click the button to see what .slideToggle does</p>
+        <button type="button" name="button">SlideToggle</button>
+    </div>
+    <div class="function">
+        <h1>FadeIn</h1>
+        <p>Click the button to see what .fadeIn does</p>
+        <button type="button" name="button">FadeIn</button>
+    </div>
+    <div class="function">
+        <h1>FadeOut</h1>
+        <p>Click the button to see what .fadeOut does</p>
+        <button type="button" name="button">FadeOut</button>
+    </div>
+    <div class="function">
+        <h1>AddClass</h1>
+        <p>Click the button to see what .addClass does</p>
+        <button type="button" name="button">AddClass</button>
+    </div>
+    <div class="function">
+        <h1>Before</h1>
+        <p>Click the button to see what .before does</p>
+        <button type="button" name="button">Before</button>
+    </div>
+    <div class="function">
+        <h1>After</h1>
+        <p>Click the button to see what .after does</p>
+        <button type="button" name="button">After</button>
+    </div>
+    <div class="function">
+        <h1>Append</h1>
+        <p>Click the button to see what .append does</p>
+        <button type="button" name="button">Append</button>
+    </div>
+    <div class="function">
+        <h1>HTML</h1>
+        <p>Click the button to see what .html does</p>
+        <button type="button" name="button">HTML</button>
+    </div>
+    <div class="function">
+        <h1>Attr</h1>
+        <p>Click the button to see what .attr does</p>
+        <button type="button" name="button">Attr</button>
+    </div>
+    <div class="function">
+        <h1>Val</h1>
+        <p>Click the button to see what .val does</p>
+        <button type="button" name="button">Val</button>
+    </div>
+    <div class="function">
+        <h1>Text</h1>
+        <p>Click the button to see what .click does</p>
+        <button type="button" name="button">Text</button>
+    </div>
+    <div class="function last">
+        <h1>Data</h1>
+        <p>Click the button to see what .data does</p>
+        <button type="button" name="button">Data</button>
+    </div>
+</body>
+
+</html>
